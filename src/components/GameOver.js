@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../App'
 
-export default function GameOver() {
+function GameOver() {
 
     const {gameOver, correctWord, currAttempt} = useContext(AppContext)
 
@@ -17,3 +17,5 @@ export default function GameOver() {
     </div>
   )
 }
+
+export default GameOver;
